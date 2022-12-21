@@ -8,44 +8,49 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 
+import { refContext } from "../App";
+import { useContext } from "react";
+
 function Contact() {
+
+    const { contactRef } = useContext(refContext);
 
     return (<>
 
-        <div className="contacts-container section">
-            <h2 class="text-center title">Contact</h2>
+        <div ref={contactRef} className="contacts-container section">
+            <h2 className="text-center title">Contact</h2>
 
             <div className="contacts-wrapper">
                 <div className="contacts-set1-wrapper">
-                    <div class="contact-option">
+                    <div className="contact-option">
                         <a href="mailto:sivaraj2siva@gmail.com" target="_blank" rel="noopener noreferrer">
                             <Button size="large" variant="text" startIcon={<ContactMailIcon sx={{ fontSize: "40px" }} />}>
-                                <span class="contact-text">sivaraj2siva@gmail.com</span>
+                                <span className="contact-text">sivaraj2siva@gmail.com</span>
                             </Button>
                         </a>
                     </div>
 
-                    <div class="contact-option">
+                    <div className="contact-option">
                         <a href="callto:+919489310240" target="_blank" rel="noopener noreferrer">
                             <Button size="large" variant="text" startIcon={<PhonelinkRingRoundedIcon />}>
-                                <span class="contact-text">9489310240</span>
+                                <span className="contact-text">9489310240</span>
                             </Button>
                         </a>
                     </div>
-                    <div class="contact-option">
+                    <div className="contact-option">
                         <a href="https://www.google.com/maps/place/Dharmapuri,+Tamil+Nadu/@12.126953,78.1514842,14z/data=!3m1!4b1!4m5!3m4!1s0x3bac16f95a63ed01:0x3f2cb64e61c93aef!8m2!3d12.1210997!4d78.1582143" target="_blank" rel="noopener noreferrer">
                             <Button size="large" variant="text" startIcon={<LocationOnRoundedIcon />}>
-                                <span class="contact-text">Dharmapuri, Tamil Nadu</span>
+                                <span className="contact-text">Dharmapuri, Tamil Nadu</span>
                             </Button>
                         </a>
                     </div>
                 </div>
                 <div className="contacts-set2-wrapper">
 
-                    <div class="contact-option">
+                    <div className="contact-option">
                         <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
                             <Button size="large" variant="text" startIcon={<GetAppRoundedIcon />}>
-                                <span class="contact-text">Download Resume PDF</span>
+                                <span className="contact-text">Download Resume PDF</span>
                             </Button>
                         </a>
                     </div>

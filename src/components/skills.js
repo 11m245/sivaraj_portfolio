@@ -1,6 +1,9 @@
-
+import { refContext } from "../App";
+import { useContext } from "react";
 
 function Skills() {
+
+    const { skillsRef } = useContext(refContext);
 
     const sets = [
         {
@@ -42,10 +45,10 @@ function Skills() {
 
     return (<>
 
-        <div className="skills-container section">
+        <div ref={skillsRef} className="skills-container section">
             <h2 className="text-center title">Skills</h2>
             <div className="skill-sets-container d-flex flex-column">
-                {sets.map((set) => <SkillSet set={set} />)}
+                {sets.map((set, i) => <SkillSet key={i} set={set} />)}
             </div>
         </div>
 
@@ -60,7 +63,7 @@ function SkillSet({ set }) {
         <div className="skill-set-container mb-3 ">
             <h3 className="sub-title set-title " >{setTitle}</h3>
             <div className="d-flex card-body">
-                {courses.map((course) => <Course course={course} />)}
+                {courses.map((course, i) => <Course key={i} course={course} />)}
             </div>
         </div>
     </>)
@@ -76,8 +79,8 @@ function Course({ course }) {
 
     return (<>
         <div className="course-wrapper">
-            <img class="course-logo" src={courseLogo} alt={courseTitle} />
-            <span class="course-name">{courseTitle}</span>
+            <img className="course-logo" src={courseLogo} alt={courseTitle} />
+            <span className="course-name">{courseTitle}</span>
         </div>
     </>)
 }

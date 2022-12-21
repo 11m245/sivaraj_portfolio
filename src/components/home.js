@@ -4,14 +4,16 @@ import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
-
+import { refContext } from '../App';
+import { useContext } from 'react';
 
 function Home() {
 
+    const { homeRef } = useContext(refContext);
 
 
     return (<>
-        <div className="home-container section">
+        <div ref={homeRef} className="home-container section">
             <div className="myphoto-wrapper">
                 <img className="myphoto" src="./assets/photo3.png" alt="displaypicture" />
             </div>

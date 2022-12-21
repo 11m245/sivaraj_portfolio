@@ -2,7 +2,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 import LanguageIcon from '@mui/icons-material/Language';
 
+import { refContext } from '../App';
+import { useContext } from 'react';
+
 function Projects() {
+
+    const { projectsRef } = useContext(refContext);
 
     const projects = [{
         title: "Youtube Clone",
@@ -19,11 +24,11 @@ function Projects() {
     }];
 
     return (<>
-        <div className="projects-container section">
-            <h2 class="text-center title">Projects</h2>
+        <div ref={projectsRef} className="projects-container section">
+            <h2 className="text-center title">Projects</h2>
 
             <div className="projects-wrapper">
-                {projects.map((project) => <Project project={project} />)}
+                {projects.map((project, i) => <Project key={i} project={project} />)}
             </div>
 
         </div>
@@ -36,11 +41,11 @@ function Project({ project }) {
 
     return (<>
         <div className="project-wrapper">
-            <img class="project-image" src={image_url} alt="project1-logo" />
-            <h4 class="project-title text-center">{title}</h4>
-            <p class="project-summary"> {summary}</p>
+            <img className="project-image" src={image_url} alt="project1-logo" />
+            <h4 className="project-title text-center">{title}</h4>
+            <p className="project-summary"> {summary}</p>
             <div className="tags-container p-2 d-flex justify-content-center">
-                {topics.map((topic, i) => <Tag color={i % 2 === 0 ? "green" : "#1976d2"} topic={topic} />)}
+                {topics.map((topic, i) => <Tag key={i} color={i % 2 === 0 ? "green" : "#1976d2"} topic={topic} />)}
             </div>
             <Link links={links} />
         </div>

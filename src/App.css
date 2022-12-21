@@ -216,7 +216,7 @@ margin-inline: auto;
   justify-content: space-between;
   align-items: center;
   /* border: 2px solid red; */
-  min-height: 3rem;
+  max-height: 3.5rem;
   position: fixed;
   top: 0;
   border-bottom-left-radius: 20px;
@@ -227,7 +227,13 @@ margin-inline: auto;
 
 .header-container ul li{
   list-style: none;
- 
+  cursor: pointer;   
+}
+
+.header-container ul li:hover{
+  color: #0d6efd;
+  font-weight: 600;
+  border-bottom: 1px solid #0d6efd;
   
 }
 
@@ -270,5 +276,9 @@ margin-inline: auto;
 
   .text-summary{
     font-size: 20px;
+  }
+
+  .footer-container{
+    display: none;
   }
 }
