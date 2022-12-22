@@ -6,7 +6,7 @@ import GetAppIcon from '@mui/icons-material/GetApp';
 
 
 
-function Header() {
+function Header({ isMobile }) {
 
     const { homeRef, aboutRef, skillsRef, projectsRef, contactRef } = useContext(refContext);
 
@@ -16,12 +16,11 @@ function Header() {
             behavior: "smooth",
         });
 
-
     }
 
     return (<>
 
-        <nav className="header-container container">
+        {isMobile ? null : <nav className="header-container container">
             <h3>Sivaraj</h3>
             <ul className="options">
                 <li onClick={() => scrollToSection(homeRef)} >Home</li>
@@ -32,12 +31,14 @@ function Header() {
                 <a style={{ textDecoration: "none" }} href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <Button variant="text" endIcon={<GetAppIcon sx={{ color: "#c2f7c2", borderRadius: "50%", backgroundColor: "#1976d2" }} />}>
 
-                        <li style={{ textTransform: "capitalize", color: "#212529", "&:hover": { color: "red!important" } }}>Resume</li>
+                        <li className="resume-button" style={{ textTransform: "capitalize", color: "#212529", "&:hover": { color: "red!important" } }}>Resume</li>
 
                     </Button>
                 </a>
             </ul>
-        </nav>
+        </nav>}
+
+
     </>)
 }
 

@@ -39,7 +39,7 @@ function Contact() {
                     </div>
                     <div className="contact-option">
                         <a href="https://www.google.com/maps/place/Dharmapuri,+Tamil+Nadu/@12.126953,78.1514842,14z/data=!3m1!4b1!4m5!3m4!1s0x3bac16f95a63ed01:0x3f2cb64e61c93aef!8m2!3d12.1210997!4d78.1582143" target="_blank" rel="noopener noreferrer">
-                            <Button size="large" variant="text" startIcon={<LocationOnRoundedIcon />}>
+                            <Button size="large" color="secondary" variant="text" startIcon={<LocationOnRoundedIcon />}>
                                 <span className="contact-text">Dharmapuri, Tamil Nadu</span>
                             </Button>
                         </a>

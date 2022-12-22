@@ -9,8 +9,14 @@ import { useContext } from 'react';
 
 function Home() {
 
-    const { homeRef } = useContext(refContext);
+    const { homeRef, contactRef } = useContext(refContext);
 
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
+        });
+    }
 
     return (<>
         <div ref={homeRef} className="home-container section">
@@ -21,7 +27,7 @@ function Home() {
                 <h1 className="title">Hi, I'm Sivaraj</h1>
                 <h5 className="sub-title">I am into Web Development</h5>
 
-                <Button sx={{ borderRadius: "18px", fontSize: "16px", fontWeight: 600, "&:hover": { backgroundColor: "green" } }} variant="contained" endIcon={<SendIcon />}>Contact</Button>
+                <Button onClick={() => scrollToSection(contactRef)} sx={{ borderRadius: "18px", fontSize: "16px", fontWeight: 600, "&:hover": { backgroundColor: "green" } }} variant="contained" endIcon={<SendIcon />}>Contact</Button>
 
                 <div className="social-links-container d-flex justify-content-center gap-2 mt-2">
                     <a href="https://github.com/11m245/" target="_blank" rel="noopener noreferrer">

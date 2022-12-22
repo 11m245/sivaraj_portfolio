@@ -7,6 +7,7 @@ import { Projects } from './components/projects';
 import { Contact } from './components/contact';
 import { Header } from "./components/header";
 
+
 export const refContext = createContext();
 
 function App() {
@@ -15,11 +16,24 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
   const refsObj = { aboutRef, homeRef, skillsRef, projectsRef, contactRef }
 
-  const [isMobile, setIsMobile] = useState(null);
 
 
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      window.innerWidth < 900 ? setIsMobile(true) : setIsMobile(false);
+    }
+    window.addEventListener("resize", handleResize);
+    console.log(isMobile);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      console.log(isMobile);
+    }
+  })
 
   return (
 
@@ -27,7 +41,7 @@ function App() {
 
       <refContext.Provider value={refsObj}>
         <div className="project-container container">
-          <Header />
+          <Header isMobile={isMobile} />
           <div className="content-container">
             <Home />
             <About />
