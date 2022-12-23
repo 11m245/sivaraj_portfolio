@@ -67,10 +67,12 @@ function Link({ links }) {
     return (<>
         <div className="links-container">
             <a href={source} target="_blank" rel="noopener noreferrer">
-                <IconButton sx={{ "&:hover": { backgroundColor: "hsl(210deg 79% 85%)" }, fontSize: "large" }} aria-label="delete"><GitHubIcon sx={{ fontSize: { md: "30px" } }} /></IconButton>
+                <IconButton sx={{ "&:hover": { backgroundColor: "hsl(210deg 79% 85%)" }, fontSize: "large" }} aria-label="delete">
+                    <GitHubIcon sx={{ fontSize: { md: "30px" }, color: "black" }} /></IconButton>
             </a>
             <a href={deployed} target="_blank" rel="noopener noreferrer">
-                <IconButton sx={{ "&:hover": { backgroundColor: "hsl(210deg 79% 85%)" }, fontSize: "large" }} aria-label="delete"><LanguageIcon sx={{ fontSize: { md: "30px" } }} /></IconButton>
+                <IconButton sx={{ "&:hover": { backgroundColor: "hsl(210deg 79% 85%)" }, fontSize: "large" }} aria-label="delete">
+                    <LanguageIcon sx={{ fontSize: { md: "30px" }, color: "#1976d2" }} /></IconButton>
             </a>
 
         </div>

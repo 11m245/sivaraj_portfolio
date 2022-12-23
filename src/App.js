@@ -6,7 +6,7 @@ import { Skills } from './components/skills';
 import { Projects } from './components/projects';
 import { Contact } from './components/contact';
 import { Header } from "./components/header";
-
+import { Footer } from "./components/footer";
 
 export const refContext = createContext();
 
@@ -16,24 +16,31 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 772 ? true : false);
+  const [width, setWidth] = useState(window.innerWidth);
   const refsObj = { aboutRef, homeRef, skillsRef, projectsRef, contactRef }
 
 
 
 
-
   useEffect(() => {
+
     const handleResize = () => {
-      window.innerWidth < 900 ? setIsMobile(true) : setIsMobile(false);
+      setWidth(window.innerWidth);
+      width < 772 ? setIsMobile(true) : setIsMobile(false);
+      console.log(width);
     }
+
     window.addEventListener("resize", handleResize);
-    console.log(isMobile);
+
     return () => {
       window.removeEventListener("resize", handleResize);
-      console.log(isMobile);
     }
-  })
+
+  }, [width])
+
+
+
 
   return (
 
@@ -41,15 +48,18 @@ function App() {
 
       <refContext.Provider value={refsObj}>
         <div className="project-container container">
-          <Header isMobile={isMobile} />
+
+          {isMobile ? null : <Header />}
           <div className="content-container">
+
             <Home />
             <About />
             <Skills />
             <Projects />
             <Contact />
+            {isMobile ? <Footer /> : null}
           </div>
-          {/* <Footer /> */}
+
         </div>
       </refContext.Provider>
     </div>

@@ -6,7 +6,7 @@ import GetAppIcon from '@mui/icons-material/GetApp';
 
 
 
-function Header({ isMobile }) {
+function Header() {
 
     const { homeRef, aboutRef, skillsRef, projectsRef, contactRef } = useContext(refContext);
 
@@ -20,7 +20,7 @@ function Header({ isMobile }) {
 
     return (<>
 
-        {isMobile ? null : <nav className="header-container container">
+        <div className="header-container container">
             <h3>Sivaraj</h3>
             <ul className="options">
                 <li onClick={() => scrollToSection(homeRef)} >Home</li>
@@ -36,7 +36,7 @@ function Header({ isMobile }) {
                     </Button>
                 </a>
             </ul>
-        </nav>}
+        </div>
 
 
     </>)
