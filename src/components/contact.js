@@ -24,7 +24,7 @@ function Contact() {
                 <div className="contacts-set1-wrapper">
                     <div className="contact-option">
                         <a href="mailto:sivaraj2siva@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <Button size="large" variant="text" startIcon={<ContactMailIcon sx={{ fontSize: "40px" }} />}>
+                            <Button size="large" color="secondary" variant="text" startIcon={<ContactMailIcon sx={{ fontSize: "40px" }} />}>
                                 <span className="contact-text">sivaraj2siva@gmail.com</span>
                             </Button>
                         </a>
@@ -32,7 +32,7 @@ function Contact() {
 
                     <div className="contact-option">
                         <a href="callto:+919489310240" target="_blank" rel="noopener noreferrer">
-                            <Button size="large" variant="text" startIcon={<PhonelinkRingRoundedIcon />}>
+                            <Button size="large" color="secondary" variant="text" startIcon={<PhonelinkRingRoundedIcon />}>
                                 <span className="contact-text">9489310240</span>
                             </Button>
                         </a>
@@ -49,7 +49,7 @@ function Contact() {
 
                     <div className="contact-option">
                         <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
-                            <Button size="large" variant="text" startIcon={<GetAppRoundedIcon />}>
+                            <Button size="large" color="secondary" variant="text" startIcon={<GetAppRoundedIcon />}>
                                 <span className="contact-text">Download Resume PDF</span>
                             </Button>
                         </a>

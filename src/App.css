@@ -208,10 +208,10 @@ margin-inline: auto;
   color: #9c27b0;
 }
 
-.css-htszrh-MuiButton-startIcon>*:nth-of-type(1) {
+/* .css-htszrh-MuiButton-startIcon>*:nth-of-type(1) {
   font-size: 33px!important;
   color: #9c27b0;
-}
+} */
 
 .contacts-container a{
   text-decoration: none;
