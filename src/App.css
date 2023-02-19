@@ -14,10 +14,11 @@
 
 
 .content-container{
+  width: 100%;
   max-width: 900px;
   margin-inline: auto;
   /* background-color: #0d6efd; */
-  /* border: 2px solid green; */ 
+  /* border: 2px solid green;  */
 }
 
 .section{
@@ -115,8 +116,9 @@ gap: 1rem;
 }
 
 .skill-sets-container{
-width: 400px;
+width: max(300px,50vw);
 margin-inline: auto;
+/* border: 5px solid green; */
 }
 
 .skill-set-container{
@@ -129,6 +131,8 @@ margin-inline: auto;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  /* border: 20x solid brown; */
 }
 
 

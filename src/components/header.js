@@ -68,7 +68,7 @@ function Header() {
           </li>
           <a
             style={{ textDecoration: "none" }}
-            href="./assets/Resume.pdf"
+            href="./assets/Sivaraj_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
