@@ -110,7 +110,7 @@ function SkillSet({ set }) {
     <>
       <div className="skill-set-container mb-3 ">
         <h3 className="sub-title set-title ">{setTitle}</h3>
-        <div className="d-flex card-body">
+        <div className="course-cards-container">
           {courses.map((course, i) => (
             <Course key={i} course={course} />
           ))}

@@ -9,7 +9,7 @@
 }
 
 .project-container{  
-  /* border: 2px solid rgb(92, 92, 155); */
+  border: 2px solid rgb(92, 92, 155);
 }
 
 
@@ -74,13 +74,25 @@ gap: 1rem;
 }
 
 /* skills */
-
+.course-cards-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 100px));
+  gap:20px ;
+  justify-content: center;
+  margin-inline: auto;
+    /* border: 2px solid blue; */
+}
 
 .course-wrapper {
 	width: 100px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center; 
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .4);
+  /* background-color: rgba(194, 247, 194,0.1); */
+  /* border: 2px solid red; */
 }
 
 .course-wrapper > img {
@@ -103,8 +115,13 @@ gap: 1rem;
 }
 
 .skill-sets-container{
-max-width: 400px;
+width: 400px;
 margin-inline: auto;
+}
+
+.skill-set-container{
+  width: 100%;
+  /* border: 5px solid green; */
 }
 
 .skills-container{
@@ -122,7 +139,7 @@ margin-inline: auto;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  width: 110%;
+  width: 100%;
   /* border: 2px solid red; */
 }
 
