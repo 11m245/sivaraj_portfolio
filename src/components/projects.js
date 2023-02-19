@@ -28,7 +28,7 @@ function Projects() {
         "https://cdn.vectorstock.com/i/preview-1x/54/01/insurance-motorcycle-color-icon-moto-safety-vector-43845401.jpg",
       summary:
         "Both Workshop, user module done, users can book service for their two wheelers and workshops can process their bookings on their login",
-      topics: ["HTML", "CSS", "Javascript"],
+      topics: ["react", "bootstrap", "express JS", "MongoDB"],
       isRecommended: true,
       links: {
         sourceFrontEnd: "https://github.com/11m245/motorcyclerepair-frontend",
