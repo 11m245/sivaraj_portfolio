@@ -96,6 +96,17 @@ gap: 1rem;
   /* border: 2px solid red; */
 }
 
+.course-wrapper:hover{
+  outline: 2px dashed green;
+  outline-offset: 2px;
+  transition: all ease-in-out 0.5s;
+}
+
+.course-wrapper:hover img{
+order:2;
+transition: all ease-in-out 0.7s;
+}
+
 .course-wrapper > img {
 	width: 50px;
   aspect-ratio: 1;	
