@@ -47,7 +47,7 @@ function Home() {
               Contact
             </Button>
             <a
-              href="./assets/Sivaraj_Resume.pdf"
+              href="https://drive.google.com/file/d/1iN_v860X_MqKPwzKQxtUdQKuinN-ywv4/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
