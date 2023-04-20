@@ -29,7 +29,8 @@ function Projects() {
       title: "Daily Savings Collection App",
       image_url:
         "https://s3.us-east-2.amazonaws.com/website-assets-prod/OptionsOfSavingMoneyInYourDailyLife.jpg",
-      summary: " Financiers, Agents Collection Maintaining ",
+      summary:
+        " Daily Cash Collection - Data Maintaining App for Financiers & Agents",
       topics: ["React", "Express JS", "Mongo DB", "CSS", "Javascript"],
       isRecommended: true,
       links: {
