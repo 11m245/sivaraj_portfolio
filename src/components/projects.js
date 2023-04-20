@@ -39,7 +39,7 @@ function Projects() {
         deployedBackEnd: "https://daily-collection-backend.vercel.app/",
       },
     },
-    ,
+
     {
       title: "Pizza Order App",
       image_url:
