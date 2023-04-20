@@ -16,13 +16,27 @@ function Projects() {
         "https://cdn.vectorstock.com/i/preview-1x/54/01/insurance-motorcycle-color-icon-moto-safety-vector-43845401.jpg",
       summary:
         "Both Workshop, user module done, users can book service for their two wheelers and workshops can process their bookings on their login",
-      topics: ["react", "bootstrap", "express JS", "MongoDB"],
+      topics: ["React", "Bootstrap", "Express JS", "MongoDB"],
       isRecommended: true,
       links: {
         sourceFrontEnd: "https://github.com/11m245/motorcyclerepair-frontend",
         deployedFrontEnd: "https://whimsical-nasturtium-77b914.netlify.app",
         sourceBackEnd: "https://github.com/11m245/motorcyclerepair-backend",
         deployedBackEnd: "https://motorcyclerepair-backend.vercel.app/",
+      },
+    },
+    {
+      title: "Daily Savings Collection App",
+      image_url:
+        "https://s3.us-east-2.amazonaws.com/website-assets-prod/OptionsOfSavingMoneyInYourDailyLife.jpg",
+      summary: " Financiers, Agents Collection Maintaining ",
+      topics: ["React", "Express JS", "Mongo DB", "CSS", "Javascript"],
+      isRecommended: true,
+      links: {
+        sourceFrontEnd: "https://github.com/11m245/daily-collection-frontend",
+        deployedFrontEnd: "https://daily-savings.netlify.app/",
+        sourceBackEnd: "https://github.com/11m245/daily-collection-backend",
+        deployedBackEnd: "https://daily-collection-backend.vercel.app/",
       },
     },
     ,
@@ -32,7 +46,7 @@ function Projects() {
         "https://w7.pngwing.com/pngs/736/179/png-transparent-pizza-pizza-logo-pizza-icon-white-food-camera-icon-thumbnail.png",
       summary:
         "Both Shop, user module done, users can order pizza  and shop can process their orders on its login",
-      topics: ["react", "bootstrap", "express JS", "Mongo DB"],
+      topics: ["React", "Bootstrap", "Express JS", "Mongo DB"],
       isRecommended: false,
       links: {
         sourceFrontEnd: "https://github.com/11m245/pizza-delivery-frontend",
@@ -47,7 +61,7 @@ function Projects() {
         "https://spinfocom.co.in/solution/images/library/spinfocom-library-management.png",
       summary:
         "Both Librarian, user module done. users can borrow / return the books ",
-      topics: ["react", "CSS", "Javascript"],
+      topics: ["React", "CSS", "Javascript"],
       isRecommended: false,
       links: {
         sourceFrontEnd: "https://github.com/11m245/library_management_api",
@@ -118,9 +132,13 @@ function Tag({ topic, index }) {
   return (
     <>
       {index % 2 === 0 ? (
-        <span class="badge rounded-pill bg-primary d-block topic">{topic}</span>
+        <span className="badge rounded-pill bg-primary d-block topic">
+          {topic}
+        </span>
       ) : (
-        <span class="badge rounded-pill bg-success d-block topic">{topic}</span>
+        <span className="badge rounded-pill bg-success d-block topic">
+          {topic}
+        </span>
       )}
     </>
   );
