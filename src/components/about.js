@@ -14,7 +14,7 @@ function About() {
           passionate on exploring and building projects, using various
           technologies. I am a web developer well versed in HTML, CSS,
           JavaScript and stand at a beginner-intermediate level of React,
-          Express JS and MongoDB
+          Express JS and MongoDB.
         </p>
       </div>
     </>

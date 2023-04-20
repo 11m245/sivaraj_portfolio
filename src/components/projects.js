@@ -11,19 +11,6 @@ function Projects() {
 
   const projects = [
     {
-      title: "Library Management App",
-      image_url:
-        "https://spinfocom.co.in/solution/images/library/spinfocom-library-management.png",
-      summary:
-        "Both Librarian, user module done. users can borrow / return the books ",
-      topics: ["react", "CSS", "Javascript"],
-      isRecommended: false,
-      links: {
-        sourceFrontEnd: "https://github.com/11m245/library_management_api",
-        deployedFrontEnd: "https://serene-flan-d5ad15.netlify.app/",
-      },
-    },
-    {
       title: "Moto Service App",
       image_url:
         "https://cdn.vectorstock.com/i/preview-1x/54/01/insurance-motorcycle-color-icon-moto-safety-vector-43845401.jpg",
@@ -38,6 +25,7 @@ function Projects() {
         deployedBackEnd: "https://motorcyclerepair-backend.vercel.app/",
       },
     },
+    ,
     {
       title: "Pizza Order App",
       image_url:
@@ -53,6 +41,19 @@ function Projects() {
         deployedBackEnd: "https://pizza-delivery-backend.vercel.app",
       },
     },
+    {
+      title: "Library Management App",
+      image_url:
+        "https://spinfocom.co.in/solution/images/library/spinfocom-library-management.png",
+      summary:
+        "Both Librarian, user module done. users can borrow / return the books ",
+      topics: ["react", "CSS", "Javascript"],
+      isRecommended: false,
+      links: {
+        sourceFrontEnd: "https://github.com/11m245/library_management_api",
+        deployedFrontEnd: "https://serene-flan-d5ad15.netlify.app/",
+      },
+    },
   ];
 
   return (
@@ -61,6 +62,23 @@ function Projects() {
         <h2 className="text-center title">Projects</h2>
 
         <div className="projects-wrapper">
+          <div className="credentials project-wrapper">
+            <h3
+              style={{ borderBottom: "2px solid green", paddingBottom: "3px" }}
+            >
+              Login Credentials
+            </h3>
+            <h4 style={{ color: "#0d6efd", textAlign: "center" }}>
+              User Module
+            </h4>
+            <h5>Login ID : user@gmail.com </h5>
+            <h5>Password : 12345678 </h5>
+            <h4 style={{ color: "#0d6efd", textAlign: "center" }}>
+              Admin Module
+            </h4>
+            <h5>Login ID : admin@gmail.com </h5>
+            <h5>Password : 12345678 </h5>
+          </div>
           {projects.map((project, i) => (
             <Project key={i} project={project} />
           ))}
