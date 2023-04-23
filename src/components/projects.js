@@ -77,7 +77,7 @@ function Projects() {
         <h2 className="text-center title">Projects</h2>
 
         <div className="projects-wrapper">
-          <div className="credentials project-wrapper">
+          {/* <div className="credentials project-wrapper">
             <h3
               style={{ borderBottom: "2px solid green", paddingBottom: "3px" }}
             >
@@ -93,7 +93,7 @@ function Projects() {
             </h4>
             <h5>Login ID : admin@gmail.com </h5>
             <h5>Password : 12345678 </h5>
-          </div>
+          </div> */}
           {projects.map((project, i) => (
             <Project key={i} project={project} />
           ))}
