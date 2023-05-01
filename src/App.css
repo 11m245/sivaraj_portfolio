@@ -204,7 +204,7 @@ margin-inline: auto;
 
 }
 
-.recommended-project:hover { 
+.project-wrapper:hover { 
       transition: .5s ease-in-out;
       background-color: #89e99a;
 

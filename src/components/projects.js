@@ -2,6 +2,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import IconButton from "@mui/material/IconButton";
 import LanguageIcon from "@mui/icons-material/Language";
 import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
+import GradeIcon from "@mui/icons-material/Grade";
 
 import { refContext } from "../App";
 import { useContext } from "react";
@@ -17,7 +18,7 @@ function Projects() {
       summary:
         "Both Workshop, user module done, users can book service for their two wheelers and workshops can process their bookings on their login",
       topics: ["React", "Bootstrap", "Express JS", "MongoDB"],
-      isRecommended: true,
+      isRecommended: false,
       links: {
         sourceFrontEnd: "https://github.com/11m245/motorcyclerepair-frontend",
         deployedFrontEnd: "https://whimsical-nasturtium-77b914.netlify.app",
@@ -32,7 +33,7 @@ function Projects() {
       summary:
         " Daily Cash Collection - Data Maintaining App for Financiers & Agents",
       topics: ["React", "Express JS", "Mongo DB", "CSS", "Javascript"],
-      isRecommended: true,
+      isRecommended: false,
       links: {
         sourceFrontEnd: "https://github.com/11m245/daily-collection-frontend",
         deployedFrontEnd: "https://daily-savings.netlify.app/",
@@ -47,7 +48,14 @@ function Projects() {
         "https://w7.pngwing.com/pngs/736/179/png-transparent-pizza-pizza-logo-pizza-icon-white-food-camera-icon-thumbnail.png",
       summary:
         "Both Shop, user module done, users can order pizza  and shop can process their orders on its login",
-      topics: ["React", "Bootstrap", "Express JS", "Mongo DB"],
+      topics: [
+        "React",
+        "Bootstrap",
+        "Express JS",
+        "Mongo DB",
+        "Payment Gateway",
+        "Stripe",
+      ],
       isRecommended: false,
       links: {
         sourceFrontEnd: "https://github.com/11m245/pizza-delivery-frontend",
@@ -57,16 +65,23 @@ function Projects() {
       },
     },
     {
-      title: "Library Management App",
-      image_url:
-        "https://spinfocom.co.in/solution/images/library/spinfocom-library-management.png",
-      summary:
-        "Both Librarian, user module done. users can borrow / return the books ",
-      topics: ["React", "CSS", "Javascript"],
+      title: "Chat App",
+      image_url: "https://i.ibb.co/QDkbTJK/schat-app-logo-icon-vector.png",
+      summary: "User Room Chat can be availed using this app ",
+      topics: [
+        "React",
+        "CSS",
+        "Javascript",
+        "ExpressJS",
+        "MongoDB",
+        "Socket IO",
+      ],
       isRecommended: false,
       links: {
-        sourceFrontEnd: "https://github.com/11m245/library_management_api",
-        deployedFrontEnd: "https://serene-flan-d5ad15.netlify.app/",
+        sourceFrontEnd: "https://github.com/11m245/chat-app-frontend",
+        deployedFrontEnd: "https://coruscating-druid-7fa808.netlify.app",
+        sourceBackEnd: "https://github.com/11m245/chat-app-backend",
+        deployedBackEnd: "https://chat-app-backend-j5l6.onrender.com",
       },
     },
   ];
@@ -114,6 +129,7 @@ function Project({ project }) {
             ? "project-wrapper recommended-project"
             : "project-wrapper"
         }
+        style={{ position: "relative" }}
       >
         <img className="project-image" src={image_url} alt="project1-logo" />
         <h4 className="project-title text-center">{title}</h4>
@@ -124,6 +140,14 @@ function Project({ project }) {
           ))}
         </div>
         <Link links={links} />
+        {isRecommended ? (
+          <div
+            className="star-wrapper"
+            style={{ position: "absolute", top: 0, right: 0, padding: "6px" }}
+          >
+            <GradeIcon color="secondary" />
+          </div>
+        ) : null}
       </div>
     </>
   );
