@@ -3,7 +3,6 @@ import { refContext } from "../App";
 
 import Button from "@mui/material/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
-import { Home } from "./home";
 
 function Header() {
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef } =
