@@ -10,9 +10,13 @@ function Header() {
     useContext(refContext);
   const [activeSection, setActiveSection] = useState("Home");
   const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
+    // window.scrollTo({
+    //   top: elementRef.current.offsetTop,
+    //   behavior: "smooth",
+    // });
+    elementRef.current.scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   };
 

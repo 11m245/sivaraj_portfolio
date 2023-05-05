@@ -289,8 +289,8 @@ margin-inline: auto;
   
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0%); 
+  /* left: 50%; */
+  /* transform: translate(-50%, 0%);  */
   /* border: 2px solid red; */  
 }
 

@@ -91,7 +91,7 @@ function Skills() {
 
   return (
     <>
-      <div ref={skillsRef} className="skills-container section">
+      <div ref={skillsRef} className="skills-container section pt-5">
         <h2 className="text-center title">Skills</h2>
         <div className="skill-sets-container d-flex flex-column">
           {sets.map((set, i) => (

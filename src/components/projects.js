@@ -14,7 +14,7 @@ function Projects() {
     {
       title: "Moto Service App",
       image_url:
-        "https://cdn.vectorstock.com/i/preview-1x/54/01/insurance-motorcycle-color-icon-moto-safety-vector-43845401.jpg",
+        "https://e7.pngegg.com/pngimages/841/265/png-clipart-matsuda-motorcycle-store-motorcycle-accessories-honda-motor-company-mechanic-motorcycle-angle-logo.png",
       summary:
         "Both Workshop, user module done, users can book service for their two wheelers and workshops can process their bookings on their login",
       topics: ["React", "Bootstrap", "Express JS", "MongoDB"],
@@ -88,7 +88,7 @@ function Projects() {
 
   return (
     <>
-      <div ref={projectsRef} className="projects-container section">
+      <div ref={projectsRef} className="projects-container section pt-5">
         <h2 className="text-center title">Projects</h2>
 
         <div className="projects-wrapper">
@@ -131,7 +131,7 @@ function Project({ project }) {
         }
         style={{ position: "relative" }}
       >
-        <img className="project-image" src={image_url} alt="project1-logo" />
+        <img className="project-image" src={image_url} alt={`${title}`} />
         <h4 className="project-title text-center">{title}</h4>
         <p className="project-summary"> {summary}</p>
         <div className="tags-container">
