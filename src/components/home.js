@@ -7,6 +7,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import { refContext } from "../App";
 import { useContext } from "react";
+export const resumeDriveLink =
+  "https://drive.google.com/file/d/1iN_v860X_MqKPwzKQxtUdQKuinN-ywv4/view?usp=sharing";
 
 function Home() {
   const { homeRef, contactRef } = useContext(refContext);
@@ -47,7 +49,7 @@ function Home() {
               Contact
             </Button>
             <a
-              href="https://drive.google.com/file/d/1iN_v860X_MqKPwzKQxtUdQKuinN-ywv4/view?usp=sharing"
+              href={resumeDriveLink}
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}

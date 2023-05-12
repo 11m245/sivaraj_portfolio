@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { refContext } from "../App";
-
 import Button from "@mui/material/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
+import { resumeDriveLink } from "./home.js";
 
 function Header() {
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef } =
@@ -71,7 +71,7 @@ function Header() {
           </li>
           <a
             style={{ textDecoration: "none" }}
-            href="https://drive.google.com/file/d/1iN_v860X_MqKPwzKQxtUdQKuinN-ywv4/view?usp=sharing"
+            href={resumeDriveLink}
             target="_blank"
             rel="noopener noreferrer"
           >

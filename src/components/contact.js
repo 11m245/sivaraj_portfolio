@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
+import { resumeDriveLink } from "./home.js";
 
 import { refContext } from "../App";
 import { useContext } from "react";
@@ -74,7 +75,7 @@ function Contact() {
           <div className="contacts-set2-wrapper">
             <div className="contact-option">
               <a
-                href="./assets/Sivaraj_Resume.pdf"
+                href={resumeDriveLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
