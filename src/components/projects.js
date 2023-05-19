@@ -12,8 +12,7 @@ function Projects() {
   const projects = [
     {
       title: "Moto Service App",
-      image_url:
-        "https://e7.pngegg.com/pngimages/841/265/png-clipart-matsuda-motorcycle-store-motorcycle-accessories-honda-motor-company-mechanic-motorcycle-angle-logo.png",
+      image_url: "https://i.ibb.co/jbFL7jf/moto-Service.png",
       summary:
         "Both Workshop, user module done, users can book service for their two wheelers and workshops can process their bookings on their login",
       topics: ["React", "Bootstrap", "Express JS", "MongoDB"],
@@ -27,8 +26,7 @@ function Projects() {
     },
     {
       title: "Daily Savings Collection App",
-      image_url:
-        "https://s3.us-east-2.amazonaws.com/website-assets-prod/OptionsOfSavingMoneyInYourDailyLife.jpg",
+      image_url: "https://i.ibb.co/vYcgMqN/savings.jpg",
       summary:
         " Daily Cash Collection - Data Maintaining App for Financiers & Agents",
       topics: ["React", "Express JS", "Mongo DB", "CSS", "Javascript"],
@@ -43,8 +41,7 @@ function Projects() {
 
     {
       title: "Pizza Order App",
-      image_url:
-        "https://w7.pngwing.com/pngs/736/179/png-transparent-pizza-pizza-logo-pizza-icon-white-food-camera-icon-thumbnail.png",
+      image_url: "https://i.ibb.co/8r3fcrQ/pizzaApp.png",
       summary:
         "Both Shop, user module done, users can order pizza  and shop can process their orders on its login",
       topics: [
@@ -65,7 +62,7 @@ function Projects() {
     },
     {
       title: "Chat App",
-      image_url: "https://i.ibb.co/QDkbTJK/schat-app-logo-icon-vector.png",
+      image_url: "https://i.ibb.co/dk6X2CC/chat-App-Image.png",
       summary: "User Room Chat can be availed using this app ",
       topics: [
         "React",
